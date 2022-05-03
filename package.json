@@ -1,23 +1,29 @@
 {
-  "name": "personalapp",
-  "version": "0.0.0",
-  "private": true,
+  "name": "cs103a-cpa02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "devStart": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkimes/cs103a-cpa02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkimes/cs103a-cpa02/issues"
+  },
+  "homepage": "https://github.com/jkimes/cs103a-cpa02#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "body-parser": "^1.19.2",
-    "bootstrap": "^5.1.3",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
     "ejs": "^3.1.7",
-    "express": "~4.16.1",
+    "express": "^4.18.1",
     "express-ejs-layouts": "^2.5.1",
-    "express-session": "^1.16.2",
-    "http-errors": "~1.6.3",
-    "mongoose": "^5.9.21",
-    "nodemon": "^2.0.15"
+    "express-session": "^1.17.2"
   }
 }
