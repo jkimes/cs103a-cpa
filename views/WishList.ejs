@@ -1,0 +1,32 @@
+
+
+    <div class="bg-light border border-primary p-3 rounded m-3">
+        <h1 class="display-4 text-center">To Do List</h1>
+        <p class="lead text-center"> Wishlist'</p>
+    </div>
+    
+    <hr>
+    <ol>
+        <% for (item of items){%>
+            <li class="mb-2"> 
+                <div class="card text-cen">
+                    <img src = "images/bg.jpg" width="100" height="150" class = "card-img-top">
+                    <div class ="card-body">
+                        <h2>Title:  <%= item.title%></h2>
+                        <h5>Year: <%= item.year%> </h5>
+                        <h5>Summary: <%= item.description%></h5>
+                        <% if (item.completed) {%>
+                            <a href="/completed/false/<%= item._id%>">  Done</a>
+                        <% } else {%>
+                            <a href="/completed/true/<%= item._id%>"> In Process</a>
+                        <% } %>
+                        <br> 
+                        <a href="/delete/<%= item._id%>">(delete)</a>
+                    </li>
+                    </div>
+                </div>         
+                
+        <% }%>
+    </ol>
+    <hr>
+

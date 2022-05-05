@@ -1,0 +1,22 @@
+{
+  "name": "cs103a-cpa02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16",
+    "save-dev": "^0.0.1-security"
+  }
+}
